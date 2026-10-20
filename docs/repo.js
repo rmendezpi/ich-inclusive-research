@@ -4,13 +4,11 @@
 (function () {
   "use strict";
 
-  var DEPTS = {
-    PPP: "Population, Policy and Practice",
-    DBC: "Developmental Biology and Cancer",
-    DN: "Developmental Neurosciences",
-    GGM: "Genetics and Genomic Medicine",
-    III: "Infection, Immunity and Inflammation"
-  };
+  var STUDY_TYPES = [
+    "Clinical trials and studies",
+    "Laboratory and animal research",
+    "Population, observational and qualitative research"
+  ];
 
   var STAGES = [
     "Funding application", "Study design", "Co-production and PPIE",
@@ -75,15 +73,14 @@
   function initResources(root) {
     var search = root.querySelector("#f-search");
     var stage = root.querySelector("#f-stage");
-    var dept = root.querySelector("#f-dept");
-    var costing = root.querySelector("#f-costing");
+    var type = root.querySelector("#f-type");
     var count = root.querySelector("#f-count");
     var list = root.querySelector("#f-list");
 
     stage.appendChild(option("", "All stages"));
     STAGES.forEach(function (s) { stage.appendChild(option(s)); });
-    dept.appendChild(option("", "All departments"));
-    Object.keys(DEPTS).forEach(function (k) { dept.appendChild(option(k, DEPTS[k])); });
+    type.appendChild(option("", "All study types"));
+    STUDY_TYPES.forEach(function (s) { type.appendChild(option(s)); });
 
     fetch("data/resources.csv")
       .then(function (r) { return r.text(); })
@@ -93,12 +90,11 @@
         function render() {
           var q = search.value.trim().toLowerCase();
           var shown = data.filter(function (d) {
-            var depts = split(d.departments);
-            var text = [d.title, d.publisher, d.description, d.stages, d.category].join(" ").toLowerCase();
+            var types = split(d.study_types);
+            var text = [d.title, d.publisher, d.description, d.stages, d.study_types, d.category].join(" ").toLowerCase();
             if (q && text.indexOf(q) === -1) return false;
             if (stage.value && split(d.stages).indexOf(stage.value) === -1) return false;
-            if (dept.value && depts.indexOf("All") === -1 && depts.indexOf(dept.value) === -1) return false;
-            if (costing.checked && d.costing_involvement !== "yes") return false;
+            if (type.value && types.indexOf("Any") === -1 && types.indexOf(type.value) === -1) return false;
             return true;
           });
           count.textContent = "Showing " + shown.length + " of " + data.length + " resources";
@@ -113,8 +109,8 @@
             var tags = el("div", { "class": "tags" });
             if (d.costing_involvement === "yes") tags.appendChild(el("span", { "class": "tag costing" }, ["Costing involvement"]));
             split(d.stages).forEach(function (s) { tags.appendChild(el("span", { "class": "tag" }, [s])); });
-            split(d.departments).filter(function (x) { return x !== "All"; })
-              .forEach(function (x) { tags.appendChild(el("span", { "class": "tag dept", title: DEPTS[x] || x }, [x])); });
+            split(d.study_types).filter(function (x) { return x !== "Any"; })
+              .forEach(function (x) { tags.appendChild(el("span", { "class": "tag dept" }, [x])); });
             grid.appendChild(el("article", { "class": "card-item" }, [
               el("h3", {}, [titleNode(d.title, d.url)]),
               el("p", { "class": "publisher" }, [d.publisher + (d.year ? " (" + d.year + ")" : "")]),
@@ -125,7 +121,7 @@
           list.appendChild(grid);
         }
 
-        [search, stage, dept, costing].forEach(function (c) {
+        [search, stage, type].forEach(function (c) {
           c.addEventListener("input", render);
           c.addEventListener("change", render);
         });
