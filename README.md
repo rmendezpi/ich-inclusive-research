@@ -30,13 +30,13 @@ Edit `data/resources.csv` in Excel and save as **CSV UTF-8**. Keep the column na
 | --- | --- |
 | `title`, `publisher`, `year`, `url`, `description` | Free text. Keep descriptions to one or two sentences, based on the publisher's own page. |
 | `stages` | One or more of the following, separated by semicolons: Funding application; Study design; Co-production and PPIE; Recruitment and retention; Data collection; Analysis; Reporting and dissemination; Ethics; Training and learning |
-| `departments` | `All`, or department codes separated by semicolons: PPP; DBC; DN; GGM; III |
+| `study_types` | `Any` for resources that apply to all research, or one or more of the following, separated by semicolons: Clinical trials and studies; Laboratory and animal research; Population, observational and qualitative research |
 | `category` | Funder guidance; Participation and community involvement; EDI tools and data collection; Laboratory research; Methods, reporting and ethics |
-| `costing_involvement` | `yes` if the resource gives practical guidance on costing or paying for involvement, otherwise `no` |
+| `costing_involvement` | `yes` adds a "Costing involvement" label to the card, for resources with practical guidance on costing or paying for involvement; otherwise `no` |
 | `status` | `published` to show on the site, `review` to hide it |
 | `checked_against`, `last_checked` | Where the description was checked and the date (YYYY-MM-DD) |
 
-Spelling of stages and department codes must match exactly, or the filters will not find the resource.
+Spelling of stages and study types must match exactly, or the filters will not find the resource.
 
 ## Adding ICH examples from the form
 

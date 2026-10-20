@@ -4,7 +4,7 @@ include-after-body:
   text: '<script src="repo.js"></script>'
 ---
 
-Established frameworks, toolkits and guidance to help ICH researchers embed race equity and inclusion across the research cycle, from the funding application to reporting. Filter by research stage or department, or search by keyword. To see what ICH colleagues are already doing, visit [ICH examples](examples.qmd).
+Established frameworks, toolkits and guidance to help ICH researchers embed race equity and inclusion across the research cycle, from the funding application to reporting. Filter by research stage or study type, or search by keyword. To see what ICH colleagues are already doing, visit [ICH examples](examples.qmd).
 
 These resources were not developed by the ICH Race Equity Group. Most are drawn from the MRC page [Community resources to support diversity and inclusion in research](https://www.ukri.org/about-us/mrc/our-policies-and-standards/embedding-diversity-in-research-design/community-resources-to-support-diversity-and-inclusion-in-research). Where advice conflicts with UKRI or MRC policy, follow UKRI and MRC policy.
 
@@ -20,12 +20,8 @@ These resources were not developed by the ICH Race Equity Group. Most are drawn 
       <select id="f-stage" class="form-select"></select>
     </div>
     <div>
-      <label for="f-dept" class="form-label">Department</label>
-      <select id="f-dept" class="form-select"></select>
-    </div>
-    <div class="form-check align-self-end mb-2">
-      <input id="f-costing" type="checkbox" class="form-check-input">
-      <label for="f-costing" class="form-check-label">Costing involvement only</label>
+      <label for="f-type" class="form-label">Study type</label>
+      <select id="f-type" class="form-select"></select>
     </div>
   </div>
   <p id="f-count" class="result-count" aria-live="polite">Loading resources…</p>
@@ -34,4 +30,4 @@ These resources were not developed by the ICH Race Equity Group. Most are drawn 
 </div>
 ```
 
-Department codes: PPP Population, Policy and Practice; DBC Developmental Biology and Cancer; DN Developmental Neurosciences; GGM Genetics and Genomic Medicine; III Infection, Immunity and Inflammation. Resources without a department tag are relevant across ICH. [Download the full list as a spreadsheet](data/resources.csv).
+Choosing a study type shows resources written for that type of study, plus general resources that apply to any study. [Download the full list as a spreadsheet](data/resources.csv).
