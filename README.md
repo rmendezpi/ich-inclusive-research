@@ -2,7 +2,7 @@
 
 A small Quarto website for the ICH Race Equity Group (REG) Action Plan 2026/27, Action 4A. It has two parts:
 
-- **Frameworks and guidance** (`index.qmd`): established resources, filterable by research stage and department. Data: `data/resources.csv`.
+- **Frameworks and guidance** (`index.qmd`): established resources, filterable by research stage and study type. Data: `data/resources.csv`.
 - **ICH examples** (`examples.qmd`): work shared by ICH colleagues through the Microsoft Form, reviewed by REG. Data: `data/ich_examples.csv`.
 
 The site has no R packages and no external JavaScript libraries. All content lives in the two CSV files, so anyone on REG can update it in Excel.
