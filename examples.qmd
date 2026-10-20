@@ -1,0 +1,20 @@
+---
+title: "ICH examples of inclusive research"
+include-after-body:
+  text: '<script src="repo.js"></script>'
+---
+
+Examples of inclusive research practice and community involvement shared by ICH colleagues. Each entry has been reviewed by the ICH Race Equity Group and is published with the contributor's permission. For guidance on how to do this in your own work, see [Frameworks and guidance](index.qmd).
+
+```{=html}
+<div id="examples-app">
+  <div class="filters">
+    <div>
+      <label for="e-search" class="form-label">Search examples</label>
+      <input id="e-search" type="search" class="form-control" placeholder="e.g. recruitment, translation, parents">
+    </div>
+  </div>
+  <p id="e-count" class="result-count" aria-live="polite"></p>
+  <div id="e-list"></div>
+</div>
+```

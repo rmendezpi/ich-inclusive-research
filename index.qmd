@@ -1,0 +1,37 @@
+---
+title: "Frameworks and guidance for inclusive research"
+include-after-body:
+  text: '<script src="repo.js"></script>'
+---
+
+Established frameworks, toolkits and guidance to help ICH researchers embed race equity and inclusion across the research cycle, from the funding application to reporting. Filter by research stage or department, or search by keyword. To see what ICH colleagues are already doing, visit [ICH examples](examples.qmd).
+
+These resources were not developed by the ICH Race Equity Group. Most are drawn from the MRC page [Community resources to support diversity and inclusion in research](https://www.ukri.org/about-us/mrc/our-policies-and-standards/embedding-diversity-in-research-design/community-resources-to-support-diversity-and-inclusion-in-research). Where advice conflicts with UKRI or MRC policy, follow UKRI and MRC policy.
+
+```{=html}
+<div id="resources-app">
+  <div class="filters">
+    <div>
+      <label for="f-search" class="form-label">Search</label>
+      <input id="f-search" type="search" class="form-control" placeholder="e.g. ethnicity, young people, payment">
+    </div>
+    <div>
+      <label for="f-stage" class="form-label">Research stage</label>
+      <select id="f-stage" class="form-select"></select>
+    </div>
+    <div>
+      <label for="f-dept" class="form-label">Department</label>
+      <select id="f-dept" class="form-select"></select>
+    </div>
+    <div class="form-check align-self-end mb-2">
+      <input id="f-costing" type="checkbox" class="form-check-input">
+      <label for="f-costing" class="form-check-label">Costing involvement only</label>
+    </div>
+  </div>
+  <p id="f-count" class="result-count" aria-live="polite">Loading resources…</p>
+  <div id="f-list"></div>
+  <noscript>This page needs JavaScript to filter resources. You can download the full list as a spreadsheet below.</noscript>
+</div>
+```
+
+Department codes: PPP Population, Policy and Practice; DBC Developmental Biology and Cancer; DN Developmental Neurosciences; GGM Genetics and Genomic Medicine; III Infection, Immunity and Inflammation. Resources without a department tag are relevant across ICH. [Download the full list as a spreadsheet](data/resources.csv).

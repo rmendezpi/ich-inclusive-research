@@ -1,0 +1,17 @@
+---
+title: "Share your work"
+---
+
+Have you done something to make your research more inclusive? Share it with colleagues in about two minutes, on your phone or computer.
+
+You can drop a DOI or link, upload a document, or simply give us a title. We will ask a few quick questions about how the work included people from under-represented ethnic groups, whether you worked with community partners, and which frameworks you used.
+
+::: {.callout-note appearance="simple"}
+## [Open the submission form](FORM_URL_HERE)
+
+The form is open to UCL staff and students. If you work with a community partner who would like to contribute, please submit on their behalf with their agreement.
+:::
+
+**What happens next.** The ICH Race Equity Group reviews every submission. Only entries where you have given permission are published on the [ICH examples](examples.qmd) page. You may also be invited to give a short 15 to 20 minute showcase at an ICH meeting, on your own or with a community partner.
+
+Questions? Email [ich.reg@ucl.ac.uk](mailto:ich.reg@ucl.ac.uk).

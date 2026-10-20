@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - data/resources.csv
+    - data/ich_examples.csv
+    - repo.js
+
+lang: en-GB
+
+website:
+  title: "ICH Inclusive Research Repository"
+  description: "Frameworks, guidance and ICH examples of inclusive research, curated by the ICH Race Equity Group."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Frameworks and guidance
+      - href: examples.qmd
+        text: ICH examples
+      - href: submit.qmd
+        text: Share your work
+      - href: about.qmd
+        text: About
+  page-footer:
+    left: "ICH Race Equity Group, UCL Great Ormond Street Institute of Child Health"
+    right: "Contact: [ich.reg@ucl.ac.uk](mailto:ich.reg@ucl.ac.uk)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false

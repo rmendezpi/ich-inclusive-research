@@ -1,0 +1,82 @@
+/* ICH Inclusive Research Repository */
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.result-count {
+  margin: 0.75rem 0;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card-item {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-item h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.card-item .publisher {
+  color: #475467;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card-item .desc {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 0.78rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #eef2f6;
+  color: #1d2939;
+}
+
+.tag.costing {
+  background: #fff4e5;
+  color: #7a3e00;
+  border: 1px solid #f5c48a;
+}
+
+.tag.dept {
+  background: #eaf4ee;
+  color: #1e4d33;
+}
+
+.empty {
+  padding: 1.25rem;
+  border: 1px dashed #98a2b3;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .cards { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,27 @@
+---
+title: "About this repository"
+---
+
+The ICH Inclusive Research Repository is maintained by the ICH Race Equity Group (REG) at the UCL Great Ormond Street Institute of Child Health. It supports Action 4A of the REG Action Plan 2026/27: to collect and share examples of inclusive research practice and community involvement from across ICH, and to signpost established frameworks that show how to put inclusion into practice.
+
+The repository has two parts:
+
+- **[Frameworks and guidance](index.qmd):** established resources from funders, universities and other organisations, tagged by research stage and department.
+- **[ICH examples](examples.qmd):** work shared by ICH colleagues through the [submission form](submit.qmd), reviewed by REG and published with permission.
+
+## How resources are selected
+
+Most frameworks are drawn from the Medical Research Council page [Community resources to support diversity and inclusion in research](https://www.ukri.org/about-us/mrc/our-policies-and-standards/embedding-diversity-in-research-design/community-resources-to-support-diversity-and-inclusion-in-research), supplemented by resources identified by REG members. Descriptions summarise each resource as described by its publisher. Inclusion does not imply endorsement by REG or UCL. As MRC notes, where advice conflicts with UKRI or MRC policy and guidance, UKRI and MRC policy should be followed.
+
+## Review
+
+Every link and description is reviewed at least once a year.
+
+- Last reviewed: 20 October 2026
+- Next review due: October 2027
+
+To suggest a resource or report a broken link, email [ich.reg@ucl.ac.uk](mailto:ich.reg@ucl.ac.uk).
+
+## Accessibility
+
+ACCESSIBILITY STATEMENT TO BE ADDED: check the required wording with ICH communications before launch.
