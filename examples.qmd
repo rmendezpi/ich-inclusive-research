@@ -4,7 +4,9 @@ include-after-body:
   text: '<script src="repo.js"></script>'
 ---
 
-Examples of inclusive research practice and community involvement shared by ICH colleagues. Each entry has been reviewed by the ICH Race Equity Group and is published with the contributor's permission. For guidance on how to do this in your own work, see [Frameworks and guidance](index.qmd).
+Examples of ICH research on ethnicity, inclusive practice and community involvement. For guidance on how to do this in your own work, see [Frameworks and guidance](index.qmd).
+
+**Pilot list.** These papers were identified from Web of Science (ICH or GOSH-affiliated articles from 2019 onwards with ethnicity terms in the title or author keywords) and have not yet been reviewed by the ICH Race Equity Group. Work shared through the [submission form](submit.qmd) is reviewed by REG and published with the contributor's permission.
 
 ```{=html}
 <div id="examples-app">
