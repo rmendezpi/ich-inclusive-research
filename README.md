@@ -73,4 +73,4 @@ After every update: render, check the preview, then commit and push.
 
 Each October, check every link and description in `resources.csv`, update `last_checked`, and update the review dates in `about.qmd`.
 
-Contact: ich.reg@ucl.ac.uk
+Contact: ich.raceequity@ucl.ac.uk 
